@@ -31,7 +31,7 @@ The /etc directory contains the core configuration files of the system, use prim
 
 If you need to make changes in system configuration (for example, changing the hostname), this is where you’ll find the respective files.
 
->**/usr – User binaries and program data /usr : Содержит большинство пользовательских программ и файлов, таких как библиотеки, заголовочные файлы, документацию и прочее.
+>**/usr – User binaries and program data** /usr : Содержит большинство пользовательских программ и файлов, таких как библиотеки, заголовочные файлы, документацию и прочее.
 
 
 in ‘/usr’ go all the executable files, libraries, source of most of the system programs. For this reason, most of the files contained therein is read­only (for the normal user)
@@ -41,12 +41,13 @@ in ‘/usr’ go all the executable files, libraries, source of most of the syst
 ‘/usr/lib’ contains the system libraries
 ‘/usr/share’ contains documentation or common to all libraries, for example ‘/usr/share/man’ contains the text of the manpage
 
->**/home – User personal data /home : Содержит домашние директории для всех пользователей системы.
+>**/home – User personal data** /home : Содержит домашние директории для всех пользователей системы.
 
 
 Home directory contains personal directories for the users. The home directory contains the user data and user-specific configuration files. As a user, you’ll put your personal files, notes, programs etc in your home directory.
 
->**/lib – Shared libraries
+>**/lib – Shared libraries** /lib : Содержит общие библиотеки, необходимые для запуска программ в /bin и /sbin.
+
 
 Libraries are basically codes that can be used by the executable binaries. The /lib directory holds the libraries needed by the binaries in /bin and /sbin directories.
 
