@@ -24,6 +24,9 @@ Debian, Ubuntu, centos, redhat, oraclelinux
 
 ![My Image](img/linux-directory-structure-1.png)
 
+
+![My Image](img/linux-system-directoies-poster.png)
+
 Команды для работы с файлами и директориями;
 
 Работа с процессами;
