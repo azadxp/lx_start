@@ -53,18 +53,18 @@ Libraries are basically codes that can be used by the executable binaries. The /
 
 Libraries needed by the binaries in the /usr/bin and /usr/sbin are located in the directory /usr/lib.
 
->**/sbin – System binaries /sbin : Содержит системные исполняемые файлы, необходимые для администрирования системы и выполнения привилегированных задач.
+>**/sbin – System binaries** /sbin : Содержит системные исполняемые файлы, необходимые для администрирования системы и выполнения привилегированных задач.
 
 This is similar to the /bin directory. The only difference is that is contains the binaries that can only be run by root or a sudo user. You can think of the ‘s’ in ‘sbin’ as super or sudo.
 
->**/tmp – Temporary files /tmp : Содержит временные файлы, созданные во время работы системы.
+>**/tmp – Temporary files** /tmp : Содержит временные файлы, созданные во время работы системы.
 
 
 As the name suggests, this directory holds temporary files. Many applications use this directory to store temporary files. Even you can use directory to store temporary files.
 
 But do note that the contains of the /tmp directories are deleted when your system restarts. Some Linux system also delete files old files automatically so don’ store anything important here.
 
->**/var – Variable data files /var : Содержит переменные данные, такие как журналы, кэш, временные файлы и прочее.
+>**/var – Variable data files** /var : Содержит переменные данные, такие как журналы, кэш, временные файлы и прочее.
 
 
 Var, short for variable, is where programs store runtime information like system logging, user tracking, caches, and other files that system programs create and manage.
@@ -72,7 +72,7 @@ Var, short for variable, is where programs store runtime information like system
 The files stored here are NOT cleaned automatically and hence it provides a good place for system administrators to look for information about their system behavior. For example, if you want to check the login history in your Linux system, just check the content of the file in /var/log/wtmp.
 
 
->**/boot – Boot files
+>**/boot – Boot files**
 
 The ‘/boot’ directory contains the files of the kernel and boot image, in addition to LILO and Grub. It is often advisable that the directory resides in a partition at the beginning of the disc.
 
@@ -82,26 +82,26 @@ The ‘/proc’ directory contains the information about currently running proce
 
 For example, if you want to check processor information in Linux, you can simply refer to the file /proc/cpuinfo. You want to check memory usage of your Linux system, just look at the content of /proc/meminfo file.
 
->**/opt – Optional software
+>**/opt – Optional software((**))
 
 Traditionally, the /opt directory is used for installing/storing the files of third-party applications that are not available from the distribution’s repository.
 
 The normal practice is to keep the software code in opt and then link the binary file in the /bin directory so that all the users can run it.
 
->**/root – The home directory of the root /root : Домашняя директория суперпользователя (root).
+>**/root – The home directory of the root** /root : Домашняя директория суперпользователя (root).
 
 
 There is /root directory as well and it works as the home directory of the root user. So instead of /home/root, the home of root is located at /root. Do not confuse it with the root directory (/).
 
->**/media – Mount point for removable media
+>**/media – Mount point for removable media**
 
 When you connect a removable media such as USB disk, SD card or DVD, a directory is automatically created under the /media directory for them. You can access the content of the removable media from this directory.
 
->**/mnt – Mount directory
+>**/mnt – Mount directory**
 
 This is similar to the /media directory but instead of automatically mounting the removable media, mnt is used by system administrators to manually mount a filesystem.
 
->**/srv – Service data
+>**/srv – Service data**
 
 The /srv directory contains data for services provided by the system. For example, if you run a HTTP server, it’s a good practice to store the website data in the /srv directory.
 
