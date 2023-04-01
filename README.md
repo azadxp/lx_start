@@ -27,11 +27,11 @@ Debian, Ubuntu, centos, redhat, oraclelinux
 
 ![My Image](img/linux-system-directoies-poster.png)
 
-**/bin – Binaries**
+>**/bin – Binaries**
 
 The ‘/bin’ directly contains the executable files of many basic shell commands like ls, cp, cd etc. Mostly the programs are in binary format here and accessible by all the users in the Linux system.
 
-**/dev – Device files**
+>**/dev – Device files**
 
 This directory only contains special files, including those relating to the devices. These are virtual files, not physically on the disk.
 
