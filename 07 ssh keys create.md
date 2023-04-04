@@ -41,7 +41,7 @@ Type the following command to connect to the remote server:
 
 ```
 ssh username@remote_server_ip_address
-ssh azad@10.8.244.183
+ssh seymur@10.8.244.183
 ```
 
 

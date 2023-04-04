@@ -34,6 +34,18 @@ Note: The rsync command treats sources and destinations that end with a trailing
 If you accidentally add a trailing slash to the command, rsync will copy the contents of the root account’s `~/.ssh` directory to the sudo user’s home directory instead of copying the entire `~/.ssh` directory structure. The files will be in the wrong location and SSH will not be able to find and use them.
 ```
 
+```
+rsync --archive --chown=seymur:seymur ~/.ssh /home/seymur
+```
+
+Now, open up a new terminal session on your local machine, and use SSH with your new username:
+
+```
+ssh seymur@10.8.244.183your_server_ip
+```
+You should be logged in to the new user account without using a password. Remember, if you need to run a command with administrative privileges, type sudo before it like this:
+
+You will be prompted for your regular user password when using sudo for the first time each session (and periodically afterwards).
 
 
 
