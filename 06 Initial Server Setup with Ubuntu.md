@@ -18,6 +18,9 @@ usermod -aG sudo seymur
 **Setup SSH Key Authentication:**
 Set up SSH key authentication for the new user to allow secure remote access to the server.
  07 ssh keys create.md
+# If the root Account Uses SSH Key Authentication
+
+
 
 **Configure the Firewall:**
 Configure the firewall to restrict incoming and outgoing traffic to only necessary services.
@@ -31,6 +34,21 @@ Output
 Available applications:
   OpenSSH
   ```
+
+```
+ufw allow OpenSSH
+```
+
+```
+ufw enable
+```
+
+```
+ufw status
+```
+
+UFW Essentials: Common Firewall Rules and Commands
+ https://www.digitalocean.com/community/tutorials/ufw-essentials-common-firewall-rules-and-commands
 
 **Disable Root Login:**
 Disable root login through SSH to ensure that the server is not accessed with the default root account.
