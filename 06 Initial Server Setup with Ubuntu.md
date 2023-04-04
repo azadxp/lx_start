@@ -18,7 +18,8 @@ usermod -aG sudo seymur
 **Setup SSH Key Authentication:**
 Set up SSH key authentication for the new user to allow secure remote access to the server.
  07 ssh keys create.md
-# If the root Account Uses SSH Key Authentication
+
+` # If the root Account Uses SSH Key Authentication `
 
 
 
